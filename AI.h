@@ -7,7 +7,8 @@ class AI : Player
 {
 private:
 public:
-	int RollDie();
+	override int RollDie(Dice *Die);
+	void EndTurn();
 };
 
 #endif

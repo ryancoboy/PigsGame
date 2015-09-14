@@ -13,6 +13,7 @@ int Player::RollDie(Dice *Die)
 	{
 		TempScore += tmp;
 	}
+	return tmp;
 }
 
 bool Player::Get_Hold()
@@ -23,4 +24,14 @@ bool Player::Get_Hold()
 void Player::Set_Hold(bool toHold)
 {
 	Hold = toHold;
+}
+
+int Player::Get_Score()
+{
+	return OverallScore;
+}
+
+int Player::Get_TempScore()
+{
+	return TempScore;
 }

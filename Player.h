@@ -19,6 +19,8 @@ public:
 	virtual int RollDie(Dice *Die); //Roll of non 1 adds to TempScore, roll of 1: TempScore = 0
 	bool Get_Hold(); 
 	void Set_Hold(bool);
+	int Get_Score();
+	int Get_TempScore();
 };
 
 #endif

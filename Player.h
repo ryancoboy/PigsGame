@@ -5,7 +5,7 @@
 
 class Player
 {
-private:
+protected:
 	int TempScore;
 	int OverallScore;
 	bool Hold;

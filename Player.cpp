@@ -29,6 +29,10 @@ void Player::Set_Hold(bool toHold)
 		TempScore = 0;
 		Hold = toHold;
 	}
+	else
+	{
+		Hold = false;
+	}
 }
 
 int Player::Get_Score()

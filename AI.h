@@ -3,11 +3,11 @@
 
 #include "Player.h"
 
-class AI : Player
+class AI : public Player
 {
 private:
 public:
-	int RollDie();
+	int RollDie(Dice *Die);
 };
 
 #endif

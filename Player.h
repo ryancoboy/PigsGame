@@ -5,7 +5,11 @@
 
 class Player
 {
+<<<<<<< HEAD
 private:
+=======
+protected:
+>>>>>>> Ryan
 	int TempScore;
 	int OverallScore;
 	bool Hold;

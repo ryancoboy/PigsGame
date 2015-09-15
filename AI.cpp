@@ -2,31 +2,25 @@
 
 int AI::RollDie(Dice *Die)
 {
-	int RolledNumber = Die.RollDie();
-	
-	if(RolledNumber == 1)
+	int RolledNumber = Die->RollDice();
+
+	if (RolledNumber == 1)
 	{
 		TempScore = 0;
 		Hold = true;
 	}
-	
 	else
 	{
-		if(TempScore < 12)
+		TempScore += RolledNumber;
+		if (OverallScore + TempScore >= 100)
 		{
-			TempScore += RolledNumber;
+			Set_Hold(true);
 		}
-		
-		else
+		else if (TempScore > 12)
 		{
-			Hold = true;
+			Set_Hold(true);
 		}
 	}
-}
 
-void AI::EndTurn()
-{
-	OverallScore += TempScore;
-	TempScore = 0;
-	Hold = false;
+	return RolledNumber;
 }

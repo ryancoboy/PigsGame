@@ -3,12 +3,11 @@
 
 #include "Player.h"
 
-class AI : Player
+class AI : public Player
 {
 private:
 public:
-	override int RollDie(Dice *Die);
-	void EndTurn();
+	int RollDie(Dice *Die);
 };
 
 #endif

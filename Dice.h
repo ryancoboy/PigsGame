@@ -8,8 +8,8 @@ class Dice
   private:
 	int Sides;
   public:
-	int RollDice(){ Sides = 6; };
-
+        Dice(){ Sides = 6; }  // Initialize with 6 sides
+	int RollDice();
 	int Set_NumSides(int);
 };
 

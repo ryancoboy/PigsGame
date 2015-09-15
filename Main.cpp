@@ -26,22 +26,22 @@ int main()
 		
 		while (!Player1.Get_Hold())
 		{
-			std::cout << "Roll Dice(1) or Hold(2)?" << endl;
+			cout << "Roll Dice(1) or Hold(2)?" << endl;
 			cin >> input;
 
 			if (input == 1)
 			{
 				int tmp = Player1.RollDie(&Die);
 
-				std::cout << "Dice Rolled a: " << tmp << endl;
-				std::cout << "Running Score is: " << Player1.Get_TempScore() << endl;
+				cout << "Dice Rolled a: " << tmp << endl;
+				cout << "Running Score is: " << Player1.Get_TempScore() << endl;
 				cout << "Current Overall Score is: " << Player1.Get_Score() << endl;
 			}
 			else if (input == 2)
 			{
 				Player1.Set_Hold(true);
 
-				std::cout << "New Overall Score: " << Player1.Get_Score() << endl;
+				cout << "New Overall Score: " << Player1.Get_Score() << endl;
 			}
 		}
 		
